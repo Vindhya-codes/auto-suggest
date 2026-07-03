@@ -7,7 +7,7 @@ const users = [
   {
     "name" :"John Doe",
     "gender" : "Male",
-    "image" : "../images/john.jpg"
+    "image" : "../images/john.png"
   },
 ]
 let curUserId = 0;
