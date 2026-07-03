@@ -1,3 +1,19 @@
-h1 {
+#h1 {
     color: blue;
+}
+
+.home {
+    text-align: center;
+}
+
+#homeContainer {
+    border: 3px dotted blueviolet;
+}
+
+#toggle {
+    color: brown;
+}
+
+#homeContainer:hover {
+    background-color: aquamarine;
 }
