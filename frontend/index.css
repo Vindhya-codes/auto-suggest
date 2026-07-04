@@ -33,6 +33,11 @@
 }
 .imgCard {
     margin-top: 10px;
+    text-align: center;
+    border: 3px solid black;
+    width: 300px;
+    height: 500px;
+    margin: 10px auto;
 }
 .image{
     text-align: center;
@@ -48,4 +53,13 @@
 
 .info{
     text-align: center;
+}
+
+#card-toggle {
+    width: 100%;
+}
+
+#card-random {
+    margin-top: 10px;
+    width: 100%;
 }

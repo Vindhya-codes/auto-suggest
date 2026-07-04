@@ -23,4 +23,22 @@ function toggle(){
   document.getElementById("gender").innerText=users[curUserId].gender;
 }
 
-console.log("Hello from JS");
+function getRandomUser() {
+  fetch("https://randomuser.me/api/")
+  .then(function (data) {
+    return data.json()
+  })
+  .then(function (parsedData) {
+    let gender = parsedData.results[0].gender;
+    let first = parsedData.results[0].name.first;
+    let last = parsedData.results[0].name.last;
+
+    let name = first + " " + last;
+    let imgURL = parsedData.results[0].picture.large;
+    console.log(name);
+
+    document.getElementById("gender").innerText=gender;
+    document.getElementById("name").innerText=name;
+    document.getElementById("img").src=imgURL;
+  })
+}
